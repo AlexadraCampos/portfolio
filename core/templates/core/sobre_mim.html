@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    {% load static %}
+    <link href="{% static 'styles.css' %}" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/sobre/">Sobre Mim</a></li>
+                <li><a href="/projetos/">Projetos</a></li>
+                <li><a href="/contato/">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tex2">
+            <h1>Olá, Muito Prazer!</h1>
+
+            <p>Meu nome é <strong>Alexandra Cordeiro</strong>, e sou uma <strong>estudante de Análise e Desenvolvimento de Sistemas (ADS)</strong> no segundo período.</p>
+
+            <p>Desde cedo, me apaixonei por tecnologia e programação e minhas habilidades incluem:</p>
+
+            <ul>
+            <li><strong>Linguagens de programação:</strong> Python, Java, C, JavaScript</li>
+            <li><strong>Desenvolvimento web:</strong> HTML, CSS, Flask, Django</li>
+            <li><strong>Ferramentas:</strong> Git, GitHub, Visual Studio Code</li>
+            </ul>
+
+        </section>
+    </main>
+
+    <div class="particles">
+    </div>
+
+    <!-- Gerador de partículas -->
+    <script>
+        const particleContainer = document.querySelector('.particles');
+        const numParticles = 60; // Quantidade de partículas
+  
+        for (let i = 0; i < numParticles; i++) {
+          const particle = document.createElement('div');
+          const size = Math.random() * 4 + 2; 
+          const startX = Math.random() * 100; 
+          
+          particle.classList.add('particle');
+          particle.style.width = `${size}px`;
+          particle.style.height = `${size}px`;
+          particle.style.bottom = `-${size}px`;
+          particle.style.left = `${startX}vw`;
+          particle.style.animationDuration = `${Math.random() * 20 + 10}s`; 
+          
+          particleContainer.appendChild(particle);
+        }
+      </script>
+</body>
+</html>

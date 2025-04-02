@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    {% load static %}
+    <link href="{% static 'styles.css' %}" rel="stylesheet">
+    <link href="{% static 'video.css' %}" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/sobre/">Sobre Mim</a></li>
+                <li><a href="/projetos/">Projetos</a></li>
+                <li><a href="/contato/">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="caixa">
+            <div class="tex1">
+                <h1>Bem-vindo ao meu portfólio!</h1>
+                <p>
+                    Aqui você encontrará uma seleção dos meus projetos, onde 
+                    aplico criatividade,tecnologia e um olhar atento aos detalhes para <br> desenvolver 
+                    soluções funcionais e intuitivas.
+                    Explore meu trabalho e veja como posso contribuir para transformar ideias em realidade. 🚀   
+                </p>
+            </div>
+        </section>
+    </main>
+
+    {% load static %}
+    <div class="video-container">
+        <video class="video-decorativo" autoplay loop muted playsinline>
+            <source src="{% static 'video/pc.mp4' %}" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+    </div>
+
+    <!-- Fundo de partículas -->
+    <div class="particles">
+        <!-- Gerador de partículas -->
+        <script>
+            const particleContainer = document.querySelector('.particles');
+            const numParticles = 60; // Quantidade de partículas
+
+            for (let i = 0; i < numParticles; i++) {
+                const particle = document.createElement('div');
+                const size = Math.random() * 4 + 2; // Tamanho entre 2px e 6px
+                const startX = Math.random() * 100; // Posição inicial em porcentagem no eixo X
+                
+                particle.classList.add('particle');
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.bottom = `-${size}px`;
+                particle.style.left = `${startX}vw`;
+                particle.style.animationDuration = `${Math.random() * 20 + 10}s`; // Tempo aleatório 10s a 30s
+                
+                particleContainer.appendChild(particle);
+            }
+        </script>
+    </div>
+</body>
+</html>

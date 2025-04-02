@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Contato</title>
+    {% load static %}
+    <link href="{% static 'styles.css' %}" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/sobre/">Sobre Mim</a></li>
+                <li><a href="/projetos/">Projetos</a></li>
+                <li><a href="/contato/">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contato">
+            <h1>Contato</h1>
+            <p>
+                <i class="fa-solid fa-envelope"></i>  
+                Email: <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=alexandrac.campos97@gmail.com">Clique aqui</a>
+            </p>
+            <p>
+                <i class="fa-brands fa-whatsapp"></i>  
+                WhatsApp: <a href="https://api.whatsapp.com/send?phone=5531971521537&text=Ol%C3%A1%2C%20vim%20pelo%20seu%20portfolio!">Clique aqui</a>
+            </p>
+            <p>
+                <i class="fa-brands fa-linkedin"></i>  
+                LinkedIn: <a href="https://www.linkedin.com/in/alexandra-cordeiro-campos/">Clique aqui</a>
+            </p>
+
+            <p>
+                <i class="fa-brands fa-github"></i>  
+                Github: <a href="https://github.com/AlexadraCampos">Clique aqui</a>
+            </p>
+        </section>
+    </main>
+
+    <div class="particles">
+    </div>
+
+    <footer class="rodape">
+        <p>Feito com 💻 e ☕ por Alexandra Cordeiro Campos.</p>
+        <p>&copy; 2025 </p>
+    </footer>
+
+    <!-- Gerador de partículas -->
+    <script>
+        const particleContainer = document.querySelector('.particles');
+        const numParticles = 60; 
+  
+        for (let i = 0; i < numParticles; i++) {
+          const particle = document.createElement('div');
+          const size = Math.random() * 4 + 2; 
+          const startX = Math.random() * 100; 
+          
+          particle.classList.add('particle');
+          particle.style.width = `${size}px`;
+          particle.style.height = `${size}px`;
+          particle.style.bottom = `-${size}px`;
+          particle.style.left = `${startX}vw`;
+          particle.style.animationDuration = `${Math.random() * 20 + 10}s`; 
+          particleContainer.appendChild(particle);
+        }
+      </script>
+</body>
+</html>
