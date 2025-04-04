@@ -8,6 +8,12 @@ body {
     position: relative; 
 }
 
+h1 {
+  font-size: 2rem; 
+  margin: 20px 0;   
+  text-align: center; 
+}
+
 .tex1 {
     font-family: Arial, sans-serif;
     font-size: 18px;
