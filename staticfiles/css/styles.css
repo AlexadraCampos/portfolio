@@ -8,12 +8,6 @@ body {
     position: relative; 
 }
 
-h1 {
-  font-size: 2rem; 
-  margin: 20px 0;   
-  text-align: center; 
-}
-
 .tex1 {
     font-family: Arial, sans-serif;
     font-size: 18px;
@@ -64,46 +58,56 @@ h1 {
   
 /* formatação do contato */
 .contato {
-    text-align: center;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-    border-radius: 10px;
-    gap: 30px;
-    padding: 40px;
-    width: 100vh;
-    margin: 0 auto; 
-  }
-  
-  .contato h1 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    font-weight: bold; 
-  }
-  
-  .contato p {
-    font-size: 1.2rem;
-    margin: 10px 0;
-    color: #ccc;
-    text-align: justify; 
-  }
-  
-  .contato a {
-    color: #1e90ff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    &:hover {
-      color: #0a6cff; 
-    }
-  }
-  
-.contato a:hover {
-    color: #ff416c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  width: 100%;
+  max-width: 600px; 
+  margin: 0 auto; 
+  padding: 40px;
 }
 
+/* Ícones e Links */
+.contato a {
+  display: flex;
+  align-items: center; 
+  gap: 10px;  
+  text-decoration: none;
+  color: #1e90ff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Hover nos links */
+.contato a:hover {
+  color: #ff416c;
+}
+
+/* Garante que os ícones fiquem centralizados */
+.contato a img {
+  width: 20px; 
+  height: 20px;
+}
+
+
+/* responsividade */
+@media (max-width: 768px) {
+  .contato {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .contato h1 {
+    font-size: 1.5rem;
+  }
+
+  .contato p {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
 
 /* Fundo animado com partículas */
 .particles {
