@@ -21,10 +21,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-93v+%%t6o*p8rd*udu=rmd@cn9&ympsk#xciu6!7u8_422t5h9'
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'dev-secret-key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'portfolio-jp46.onrender.com']
 
@@ -68,12 +68,6 @@ TEMPLATES = [
         },
     },
 ]
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'core', 'static'),
-    os.path.join(BASE_DIR, 'core', 'static', 'css'),
-]
-
 
 WSGI_APPLICATION = 'portfolio.wsgi.application'
 
