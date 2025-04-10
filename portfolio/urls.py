@@ -10,4 +10,9 @@ urlpatterns = [
     path('sobre/', views.sobre_mim, name='sobre_mim'),
     path('contato/', views.contato, name='contato'),
     path('projetos/', views.projetos, name='projetos'),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
+
+
+if not settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
