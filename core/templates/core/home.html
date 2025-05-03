@@ -34,7 +34,7 @@
 
     {% load static %}
     <div class="video-container">
-        <video class="video-decorativo" autoplay loop muted playsinline>
+        <video autoplay loop muted playsinline style="pointer-events: none;" class="video-decorativo">
             <source src="{% static 'video/pc.mp4' %}" type="video/mp4">
             Seu navegador não suporta vídeos HTML5.
         </video>
