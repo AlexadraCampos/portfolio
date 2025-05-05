@@ -22,7 +22,7 @@ SECRET_KEY = 'x^q2^of&ul7#0n1ipqoi533+**8r9m)me89ii2&^)=gt15@@v='
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'https://portfolio-jp46.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'https://portfolio-nbmx.onrender.com']
 
 # Application definition
 INSTALLED_APPS = [
