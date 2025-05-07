@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: meu-portfolio-django
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn core.portfolio.wsgi:application"
+    workingDir: portfolio
+    plan: free
+    branch: main
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: core.portfolio.settings 
+      - key: PYTHON_VERSION
+        value: 3.11
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: false
