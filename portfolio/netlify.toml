@@ -1,6 +1,0 @@
-[build]
-  publish = "public"
-  command = "python manage.py collectstatic --noinput && python manage.py migrate"
-
-[functions]
-  directory = "netlify/functions"
