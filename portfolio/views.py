@@ -13,4 +13,3 @@ def contato(request):
 
 def projetos(request):
     return render(request, 'projetos.html')
-
