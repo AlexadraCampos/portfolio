@@ -18,6 +18,7 @@ body {
 
 .main-text span {
   color: #ff416c;
+  font-size: 2rem;
 }
 
 .main-text p {
@@ -39,7 +40,7 @@ body {
 }
 
 .section-text h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   
 }
 
@@ -93,38 +94,12 @@ body {
   .contato p {
     font-size: 1.2rem;
     margin: 10px 0;
-    color: #ccc;
+    color: #cccccc;
     text-align: center;
     display: flex; 
     flex-direction: column;
   }
   
-  .contato a {
-    color: #1e90ff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    &:hover {
-      color: #0a6cff; 
-    }
-  }
-  
-.contato a:hover {
-    color: #ff416c;
-}
-
-.contato h1 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-  font-weight: bold;
-}
-
-.contato p {
-  font-size: 1.2rem;
-  margin: 10px 0;
-  color: #ccc;
-  text-align: center;
-}
 
 .contato a {
   color: #1e90ff;
@@ -180,8 +155,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 24px;
   background: transparent;
 }
 
@@ -194,6 +167,7 @@ header::before {
   bottom: 10px;
   border: 3px solid white;
   pointer-events: none;
+ 
 }
 
 /* Navegação */
@@ -218,7 +192,7 @@ nav ul li:hover {
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.4rem;
 }
 
 /* Conteúdo principal */
@@ -233,7 +207,7 @@ footer {
   text-align: center;
   padding: 10px;
   background-color: #333;
-  font-size: 14px;
+  font-size: 1rem;
   border-top: 2px solid #34495e;
   position: absolute;
   width: 100%;
@@ -250,12 +224,10 @@ footer p {
 .projetos-cards {
   text-align: center;
   padding: 50px 20px;
-  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
 /* Grid de Cards */
@@ -292,9 +264,8 @@ footer p {
 }
 
 .card__header {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #fff;
+  font-size: 1.2rem;
+  color: #ff416c;
 }
 
 .card__text-wrapper {
@@ -302,8 +273,10 @@ footer p {
 }
 
 .card__text {
-  color: #ccc;
+  color: #cccccc;
   line-height: 1.6;
+  align-items: justify;
+  font-size: 1rem;
 }
 
 .card__btn {
@@ -358,6 +331,7 @@ footer p {
     flex-direction: column;
     align-items: justify;
     margin-right: 30px;
+   
   }
 
  
@@ -368,16 +342,14 @@ footer p {
   }
 
   nav ul li a {
-    font-size: 16px;
+    font-size: 1.2rem;
   }
 
   header {
     padding: 10px 0;
   }
 
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
+ 
 
 }
 
