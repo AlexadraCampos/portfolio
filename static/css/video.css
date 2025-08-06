@@ -1,23 +1,14 @@
 .video-container {
-  position: absolute;
-  top: 220px;
-  left: 0;
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  z-index: -5;
   pointer-events: none;
 }
 
-.video-decorativo {
+.video-mp4
+ {
   width: 300px;
-
   max-width: 25%;
-
   border-radius: 10px;
-
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
 }
 
@@ -29,15 +20,7 @@
 
     height: 100%;
   }
+
+  
 }
 
-
-@media (max-width: 480px) {
-  .video-container {
-    top: 250px;
-
-    width: 100%;
-
-    height: 100%;
-  }
-}

@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projetos</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
 </head>
+
 <body>
     <!-- Fundo de partículas -->
     <div class="particles">
         <!-- As partículas serão geradas por JavaScript -->
     </div>
-    
+
     <header>
         <nav>
             <ul>
@@ -24,80 +26,78 @@
         </nav>
     </header>
 
-    <main>
-        <section class="projetos-cards">
-            <h1>Meus Projetos</h1>
-            
-            <div class="card-grid">
-                <div class="card">
-                    <img class="card__img" src="{% static 'image/idgc.png' %}" alt="IDGC">
-                    <div class="card__content">
-                        <h1 class="card__header">Validador de Identificação 🔍</h1>
-                        <div class="card__text-wrapper">
-                            <p class="card__text">Classe IDGC para validar documentos do Nacional e Internacional<strong> CPF, CNPJ, DNI e CUIL, Etc.</strong> Garantindo autenticidade e conformidade com as regras oficiais. ✅</p><p style="color:red;">Obs: pode demorar um pouco pra carregar</p>
-                        </div>
+    <section class="projetos-cards">
+        <h1 class="title">Meus Projetos</h1>
+        
+        <div class="card-grid">
+            <div class="card">
+                <img class="card__img" src="{% static 'image/idgc.png' %}" alt="IDGC">
+                <div class="card__content">
+                    <h1 class="card__header">Validador de Identificação 🔍</h1>
+                    <div class="card__text-wrapper">
+                        <p class="card__text">Classe IDGC para validar documentos do Nacional e Internacional<strong> CPF, CNPJ, DNI e CUIL, Etc.</strong> Garantindo autenticidade e conformidade com as regras oficiais. ✅</p>
+                    </div>
 
-                        <button class="card__btn">
-                            <a href="https://paginaidge-7uud.onrender.com" target="_blank">Explore <span>&rarr;</span></a>
-                        </button>
-                        
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <img class="card__img" src="{% static 'image/Clinica_capa.png' %}" alt="clinica">
-                    <div class="card__content">
-                        <h1 class="card__header">Frontend de uma clinica 🏥</h1>
-                        <div class="card__text-wrapper">
-                            <p class="card__text">Frontend desenvolvido com <strong>Python e Flask,</strong> oferecendo navegação moderna e intuitiva.<br> 🔹 Quem Somos | 🔹 Tratamentos
-                                🔹 Antes e Depois | 🔹 Novidades
-                                🔹 Agenda de Consultas 📅</p> <p style="color:red;">Obs: pode demorar um pouco pra carregar</p>
-                        </div>
-                        <button class="card__btn">
-                            <a href="https://clinica-qtue.onrender.com" target="_blank">Explore <span>&rarr;</span></a>
-                        </button>
-                        
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <img class="card__img" src="{% static 'image/capa site_luxo.png' %}" alt="site_luxo"> 
-                    <div class="card__content">
-                        <h1 class="card__header"><strong>Ponto de Luxo</strong> — Frontend desenvolvido com <strong>Django</strong></h1>
-                        <div class="card__text-wrapper">
-                            <p class="card__text">🔹 Home | 🔹 Produtos | 🔹 Serviços<br>
-                                🔹 Novidades | 🔹 Atendimento</p><p style="color:red;">Obs: pode demorar um pouco pra carregar</p>
-                        </div>
-                        <button class="card__btn">
-                            <a href="https://ponto-de-luxo-rss8.onrender.com" target="_blank">Explore <span>&rarr;</span></a>
-                        </button>                        
-                    </div>
+                    <button class="card__btn">
+                        <a href="https://paginaidge-7uud.onrender.com" target="_blank">Explore <span>&rarr;</span></a>
+                    </button>
+                    
                 </div>
             </div>
-        </section>
-    </main>
+            
+            <div class="card">
+                <img class="card__img" src="{% static 'image/Clinica_capa.png' %}" alt="clinica">
+                <div class="card__content">
+                    <h1 class="card__header">Frontend de uma clinica 🏥</h1>
+                    <div class="card__text-wrapper">
+                        <p class="card__text">Frontend desenvolvido com <strong>Python e Flask,</strong> oferecendo navegação moderna e intuitiva.<br> 🔹 Quem Somos | 🔹 Tratamentos
+                            🔹 Antes e Depois | 🔹 Novidades
+                            🔹 Agenda de Consultas 📅</p>
+                    </div>
+                    <button class="card__btn">
+                        <a href="https://clinica-qtue.onrender.com" target="_blank">Explore <span>&rarr;</span></a>
+                    </button>
+                    
+                </div>
+            </div>
+            
+            <div class="card">
+                <img class="card__img" src="{% static 'image/capa site_luxo.png' %}" alt="site_luxo"> 
+                <div class="card__content">
+                    <h1 class="card__header"><strong>Ponto de Luxo</strong> — Frontend desenvolvido com <strong>Django</strong></h1>
+                    <div class="card__text-wrapper">
+                        <p class="card__text">🔹 Home | 🔹 Produtos | 🔹 Serviços<br>
+                            🔹 Novidades | 🔹 Atendimento</p>
+                    </div>
+                    <button class="card__btn">
+                        <a href="https://ponto-de-luxo-rss8.onrender.com" target="_blank">Explore <span>&rarr;</span></a>
+                    </button>                        
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
-    
-    
     <!-- Gerador de partículas -->
     <script>
-      const particleContainer = document.querySelector('.particles');
-      const numParticles = 60; 
+        const particleContainer = document.querySelector(".particles");
+        const numParticles = 60;
 
-      for (let i = 0; i < numParticles; i++) {
-        const particle = document.createElement('div');
-        const size = Math.random() * 4 + 2; 
-        const startX = Math.random() * 100; 
-        
-        particle.classList.add('particle');
-        particle.style.width = `${size}px`;
-        particle.style.height = `${size}px`;
-        particle.style.bottom = `-${size}px`;
-        particle.style.left = `${startX}vw`;
-        particle.style.animationDuration = `${Math.random() * 20 + 10}s`; 
-        
-        particleContainer.appendChild(particle);
-      }
+        for (let i = 0; i < numParticles; i++) {
+            const particle = document.createElement("div");
+            const size = Math.random() * 4 + 2;
+            const startX = Math.random() * 100;
+
+            particle.classList.add("particle");
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+            particle.style.bottom = `-${size}px`;
+            particle.style.left = `${startX}vw`;
+            particle.style.animationDuration = `${Math.random() * 20 + 10}s`;
+
+            particleContainer.appendChild(particle);
+        }
     </script>
 </body>
+
 </html>
